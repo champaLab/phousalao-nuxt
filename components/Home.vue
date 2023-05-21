@@ -41,8 +41,12 @@
 <script setup lang="ts">
 const { apiBasePath } = useRuntimeConfig();
 
-const { data: khamkhom }: any = await useFetch(apiBasePath + "/khamkhom/random");
-const { data: bookTypes }: any = await useFetch(apiBasePath + "/book-types");
+const { data: khamkhom }: any = await useFetch(
+  "https://node-monpity.onrender.com/api/v1/khamkhom/random"
+);
+const { data: bookTypes }: any = await useFetch(
+  "https://node-monpity.onrender.com/api/v1/book-types"
+);
 </script>
 
 <style lang="css" scoped>
