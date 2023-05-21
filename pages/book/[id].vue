@@ -1,6 +1,10 @@
 <template>
   <div>
-    <div v-if="books.length > 0" class="container" v-for="(book, index) in books">
+    <div
+      v-if="books.books.length > 0"
+      class="container"
+      v-for="(book, index) in books.books"
+    >
       <CardBook
         :b_id="book.b_id"
         :b_index="book.b_index"
@@ -28,13 +32,14 @@ const { data: books } = await useFetch(
   "https://node-monpity.onrender.com/api/v1/get-books-by-type/" + id
 );
 
+console.log(books.value.bookType);
 useSeoMeta({
-  title: "My Amazing Site",
-  ogTitle: "My Amazing Site",
-  description: "This is my amazing site, let me tell you all about it.",
-  ogDescription: "This is my amazing site, let me tell you all about it.",
-  ogImage: "https://example.com/image.png",
-  twitterCard: "summary_large_image",
+  title: books.value.bookType.title,
+  ogTitle: books.value.bookType.subtitle,
+  description: books.value.bookType.subtitle,
+  ogDescription: books.value.bookType.subtitle,
+  ogImage: books.value.bookType.icon,
+  twitterCard: books.value.bookType.title,
 });
 </script>
 
