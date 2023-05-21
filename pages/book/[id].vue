@@ -1,10 +1,11 @@
 <template>
-  <div>
-    <div
-      v-if="books.books.length > 0"
-      class="container"
-      v-for="(book, index) in books.books"
-    >
+  <div class="container">
+    <div class="title">
+      <h3>ໝວດໝູ່ {{ books.bookType.title }}</h3>
+      <h5 class="subtitle">{{ books.bookType.subtitle }}</h5>
+    </div>
+
+    <div class="card" v-if="books.books.length > 0" v-for="(book, index) in books.books">
       <CardBook
         :b_id="book.b_id"
         :b_index="book.b_index"
@@ -32,7 +33,6 @@ const { data: books } = await useFetch(
   "https://node-monpity.onrender.com/api/v1/get-books-by-type/" + id
 );
 
-console.log(books.value.bookType);
 useSeoMeta({
   title: books.value.bookType.title,
   ogTitle: books.value.bookType.subtitle,
@@ -44,6 +44,13 @@ useSeoMeta({
 </script>
 
 <style lang="scss" scoped>
+.title {
+  margin-bottom: 10px;
+  border-bottom: 2px dashed #f99b3d;
+  h5 {
+    color: #8f8f8f !important;
+  }
+}
 .container {
   max-width: 100%;
   width: 960px;
@@ -64,5 +71,8 @@ useSeoMeta({
     color: red;
     font-size: 22px;
   }
+}
+.card {
+  margin-bottom: 10px;
 }
 </style>
