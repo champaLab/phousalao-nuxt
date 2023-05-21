@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="band">
-      <img src="images/header.png" alt="image" />
+      <img src="/images/header.png" alt="image" />
     </div>
     <div class="content">
       <Search />
