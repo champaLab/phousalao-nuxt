@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="content">
     <div class="band">
       <img src="/images/header.png" alt="image" />
     </div>
@@ -8,23 +8,31 @@
 
       <div class="py-2">
         <v-row>
-          <v-col sm="12" md="4" lg="4" xl="3" v-for="(bookType, index) in bookTypes">
+          <v-col
+            cols="12"
+            sm="6"
+            md="4"
+            v-for="(bookType, index) in bookTypes"
+            :key="index"
+          >
             <NuxtLink
               :to="
                 '/book/' + bookType.bt_id + '?title=' + bookType.title + bookType.subtitle
               "
             >
-              <v-card :key="bookType.icon" class="p-2">
+              <v-card class="p-2">
                 <v-row>
                   <v-col sm="12" md="4">
                     <img :src="bookType.icon" alt="icon" />
                   </v-col>
                   <v-col sm="12" md="8">
-                    <div class="font-weight-normal">
-                      <strong> {{ bookType.title }}</strong>
-                    </div>
-                    <div class="font-weight-normal" :title="bookType.subtitle">
-                      {{ bookType.subtitle != "null" ? bookType.subtitle : "" }}
+                    <div class="pa-2">
+                      <div class="font-weight-normal">
+                        <strong> {{ bookType.title }}</strong>
+                      </div>
+                      <div class="font-weight-normal" :title="bookType.subtitle">
+                        {{ bookType.subtitle != "null" ? bookType.subtitle : "" }}
+                      </div>
                     </div>
                   </v-col>
                 </v-row>
@@ -50,6 +58,9 @@ const { data: bookTypes }: any = await useFetch(
 </script>
 
 <style lang="css" scoped>
+.content {
+  padding: 5px;
+}
 .band {
   display: flex;
   align-items: center;
