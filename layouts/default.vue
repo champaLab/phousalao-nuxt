@@ -1,14 +1,6 @@
 <template>
   <div>
-    <div class="nav">
-      <p>
-        <nuxt-link to="/">ມົນທິທີ</nuxt-link>
-      </p>
-      <button>ເຂົ້າສູ່ລະບົບ</button>
-    </div>
-    <div class="content">
-      <slot />
-    </div>
+    <slot />
   </div>
 </template>
 

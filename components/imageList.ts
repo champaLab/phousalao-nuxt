@@ -1,0 +1,25 @@
+export const imageList = [
+    { path: '/images/pra-archan/ພຣະອາຈານ-ຊາໂງນ_1.jpg', type: 'PRA-XA', alt: 'ພຣະອາຈານ-ຊາໂງນ' },
+    { path: '/images/pra-archan/ພຣະອາຈານ-ຊາໂງນ_2.jpg', type: 'PRA-XA', alt: 'ພຣະອາຈານ-ຊາໂງນ' },
+    { path: '/images/pra-archan/ພຣະອາຈານ-ຊາໂງນ_3.jpg', type: 'PRA-XA', alt: 'ພຣະອາຈານ-ຊາໂງນ' },
+    { path: '/images/pra-archan/ພຣະອາຈານ-ຊາໂງນ_4.jpg', type: 'PRA-XA', alt: 'ພຣະອາຈານ-ຊາໂງນ' },
+    { path: '/images/pra-archan/ພຣະອາຈານ-ຊາໂງນ_5.jpg', type: 'PRA-XA', alt: 'ພຣະອາຈານ-ຊາໂງນ' },
+    { path: '/images/pra-archan/ພຣະອາຈານ-ຊາໂງນ_6.jpg', type: 'PRA-XA', alt: 'ພຣະອາຈານ-ຊາໂງນ' },
+    { path: '/images/pra-archan/ພຣະອາຈານ-ຊາໂງນ_7.jpg', type: 'PRA-XA', alt: 'ພຣະອາຈານ-ຊາໂງນ' },
+
+    { path: '/images/sila/1.jpeg', type: 'SILA', alt: 'ສີລາຈາລຶກ' },
+    { path: '/images/sila/2.jpeg', type: 'SILA', alt: 'ສີລາຈາລຶກ' },
+    { path: '/images/sila/3.jpeg', type: 'SILA', alt: 'ສີລາຈາລຶກ' },
+    { path: '/images/sila/4.jpeg', type: 'SILA', alt: 'ສີລາຈາລຶກ' },
+    { path: '/images/sila/5.jpeg', type: 'SILA', alt: 'ສີລາຈາລຶກ' },
+    { path: '/images/sila/6.jpeg', type: 'SILA', alt: 'ສີລາຈາລຶກ' },
+    { path: '/images/sila/7.jpeg', type: 'SILA', alt: 'ສີລາຈາລຶກ' },
+    { path: '/images/sila/8.jpeg', type: 'SILA', alt: 'ສີລາຈາລຶກ' },
+
+    { path: '/images/wat/wat-phousalao-1.jpg', type: 'WAT', alt: 'ວັດພູສະເຫຼົ້າ' },
+    { path: '/images/wat/wat-phousalao-2.jpg', type: 'WAT', alt: 'ວັດພູສະເຫຼົ້າ' },
+    { path: '/images/wat/wat-phousalao-3.jpg', type: 'WAT', alt: 'ວັດພູສະເຫຼົ້າ' },
+    { path: '/images/wat/wat-phousalao-4.jpg', type: 'WAT', alt: 'ວັດພູສະເຫຼົ້າ' },
+    { path: '/images/wat/wat-phousalao-5.jpg', type: 'WAT', alt: 'ວັດພູສະເຫຼົ້າ' },
+    { path: '/images/wat/wat-phousalao-6.jpg', type: 'WAT', alt: 'ວັດພູສະເຫຼົ້າ' },
+]

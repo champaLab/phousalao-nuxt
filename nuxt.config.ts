@@ -2,12 +2,12 @@
 export default defineNuxtConfig({
     app: {
         head: {
-            title: "ມົນພິທີ",
+            title: "ວັດພູສາເຫຼົ້າ",
             charset: "utf-8",
             viewport: 'width=device-width, initial-scale=1',
             meta: [
-                { name: "description", content: "ມົນພິທີ ເວັບໄຊ ສູນລວມ ຄວາມຮູ້ທາງສາສະໜາພຸດ" },
-                { name: "keywords", content: "ມົນພິທີ, ເວັບໄຊ, ສູນລວມ,ຄວາມຮູ້ທາງສາສະໜາພຸດ, ສາສະໜາພຸດ" }
+                { name: "description", content: "ພຣະໃຫຍ່ພູສ່າເຫລົ້າ ພະເມດຕາຂອງຊາວນະຄອນປາກເຊ, ແຂວງຈຳປາສັກ" },
+                { name: "keywords", content: "ພະໃຫຍ່ພູສ່າເຫລົ້າ, ພະເມດຕາຂອງຊາວນະຄອນປາກເຊ, ແຂວງຈຳປາສັກ" }
             ]
         }
     },

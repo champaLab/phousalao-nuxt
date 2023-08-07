@@ -1,6 +1,10 @@
 <template>
   <div>
-    <Home />
+    <HomeTop />
+    <Box1 />
+    <HistoryArchan />
+    <Image />
+    <Footer />
   </div>
 </template>
 
